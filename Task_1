@@ -1,0 +1,19 @@
+'''
+Problem_1: Write a Python program that:
+1.   Creates a dictionary where student names are keys and their marks are values.
+2.   Asks the user to input a student's name.
+3.   Retrieves and displays the corresponding marks.
+4.   If the student’s name is not found, display an appropriate message.
+'''
+
+name =input('Enter the student\'s name: ')
+name =name.capitalize()
+student_record ={
+    'Alice':85, 'Shiv':99, 'Kishan':89, 'Rohit':88, 'Sonu':78,
+    'Sohit':98, 'Abhinav':86, 'Krishna':99, 'Abhi':87
+}
+
+if (name in student_record):
+    print(f'{name}\'s marks: {student_record[name]}')
+else:
+    print('Student not found.')
